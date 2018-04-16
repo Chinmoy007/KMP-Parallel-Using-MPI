@@ -1,0 +1,13 @@
+[compile]: 	mpicc -g -Wall -o test kmp.c
+
+[run]: 		mpiexec -n 2 ./test
+
+
+
+Here:
+____
+	test	: binary or executable file.
+	kmp.c	: actual file. Source code.
+	2		: Number of propcess.
+	
+	
