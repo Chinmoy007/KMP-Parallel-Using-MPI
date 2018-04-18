@@ -1,13 +1,24 @@
+--> on computer without using mpi....
+
+
 [compile]: 	mpicc -g -Wall -o test kmp.c
 
 [run]: 		mpiexec -n 2 ./test
 
+	
 
+-------------------------------------------------------*******-------------------------------------------------
+
+
+---> on both computer using MPI clustering...
+
+
+[compile]: 	mpicc -o test kmp.c
+
+[run]: 		mpirun -np 2 ./test
 
 Here:
 ____
 	test	: binary or executable file.
 	kmp.c	: actual file. Source code.
 	2		: Number of propcess.
-	
-	
